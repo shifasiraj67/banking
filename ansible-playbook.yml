@@ -11,6 +11,7 @@
 
   - name : Start Docker Service
     command : sudo systemctl start docker
+   
  
   - name: Deploy Docker Container
-    command: docker run -itd -p 8082:8081 shifakousar/banking2:1.0
+    command: docker run -itd -p 8087:8081 shifakousar/banking2:1.0
