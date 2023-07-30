@@ -139,7 +139,7 @@ resource "aws_instance" "Prod-Server" {
      sudo apt-get update -y
      sudo apt install docker.io -y
      sudo systemctl enable docker
-     sudo docker run -itd -p 8082:8081 shifakousar/banking2:1.0
+     sudo docker run -itd -p 8087:8081 shifakousar/banking2:1.0
      sudo docker start $(docker ps -aq)
      sudo docker run -itd -p 9100:9100 prom/node-exporter
  EOF
